@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="1dp"
+    app:cardElevation="4dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    app:cardCornerRadius="15dp"
+    app:contentPadding="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/orderfoodimg"
+            android:src="@drawable/addimageicoon"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="20dp"
+            android:scaleType="centerCrop"/>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/ordercustomername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:fontFamily="@font/raleway_medium"
+                android:textColor="@color/yellow"
+                android:text="Customer Name"
+                android:layout_marginBottom="5dp"
+                />
+            <TextView
+                android:id="@+id/ordercustomerAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:fontFamily="@font/raleway_medium"
+                android:textColor="@color/black"
+                android:text="Customer Address"
+                android:layout_marginBottom="5dp"
+                />
+            <TextView
+                android:id="@+id/orderid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:fontFamily="@font/raleway_medium"
+                android:textColor="@color/black"
+                android:text="order id"
+                android:layout_marginBottom="5dp"
+                />
+
+            <TextView
+                android:id="@+id/orderfoodname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:fontFamily="@font/raleway_medium"
+                android:textColor="@color/black"
+                android:text="Name"
+                android:layout_marginBottom="5dp"
+                />
+            <TextView
+                android:id="@+id/foodid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="id"
+                android:visibility="gone"
+                android:layout_marginBottom="5dp"
+                />
+            <TextView
+                android:id="@+id/orderfoodprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:fontFamily="@font/raleway_medium"
+                android:textColor="@color/black"
+                android:text="Price"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/completeBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Complete"
+                    android:backgroundTint="@color/yellow"
+                    android:layout_marginRight="20dp"
+                    android:drawableLeft="@drawable/complete"/>
+
+                <ImageButton
+                    android:id="@+id/orderdeleteBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="48dp"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/delete_yellow" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

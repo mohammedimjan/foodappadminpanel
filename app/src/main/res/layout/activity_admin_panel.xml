@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgcolour"
+    tools:context=".screen.AdminPanel">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:padding="10dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/admindashboard"
+        >
+    </ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Admin Dashboard"
+        android:textColor="@color/yellow"
+        android:textSize="35dp"
+        android:textAlignment="center"
+        android:layout_marginTop="35dp"
+        >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/addFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Food"
+            android:backgroundTint="@color/yellow"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/addfood"
+            >
+        </Button>
+        <Button
+            android:id="@+id/viewFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Foods"
+            android:backgroundTint="@color/yellow"
+            android:drawableLeft="@drawable/viewfood"
+            >
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/viewOrders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Orders"
+            android:backgroundTint="@color/yellow"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/vieworders"
+            >
+        </Button>
+        <Button
+            android:id="@+id/logOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            android:backgroundTint="@color/yellow"
+            android:drawableLeft="@drawable/logout"
+            >
+        </Button>
+    </LinearLayout>
+</LinearLayout>
